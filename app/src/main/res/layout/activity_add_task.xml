@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Vue principale, layout contraint -->
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,7 +11,7 @@
     android:padding="16dp"
     tools:context=".AddTaskActivity">
 
-
+    <!-- Champ de texte pour le titre de la tâche -->
     <EditText
         android:id="@+id/etTaskTitle"
         android:layout_width="0dp"
@@ -25,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+    <!-- Champ de texte pour la description de la tâche -->
     <EditText
         android:id="@+id/etTaskDescription"
         android:layout_width="0dp"
@@ -41,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@id/etTaskTitle"
         android:minHeight="48dp" />
 
-
+    <!-- Layout pour les boutons (en ligne horizontale) -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-
+        <!-- Bouton pour enregistrer la tâche -->
         <Button
             android:id="@+id/btnSaveTask"
             android:layout_width="wrap_content"
@@ -62,7 +63,7 @@
             android:layout_marginEnd="8dp"
             app:cornerRadius="12dp" />
 
-
+        <!-- Bouton pour revenir en arrière -->
         <Button
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
